@@ -39,6 +39,7 @@
 }
 
 body {
+    height: 100vh;
     font-family: 'Pretendard';
     font-weight: 300;
     background: url(../images/bg1.png)no-repeat;
