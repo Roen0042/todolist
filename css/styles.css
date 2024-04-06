@@ -1,0 +1,221 @@
+/* Pretendard */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../css/fonts/Pretendard-Light.woff2') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../css/fonts/Pretendard-Regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../css/fonts/Pretendard-Bold.woff2') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../css/fonts/Pretendard-ExtraBold.woff2') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../css/fonts/Gilroy-Light.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../css/fonts/Gilroy-ExtraBold.otf') format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    background: url(../images/bg1.png)no-repeat;
+}
+
+
+
+.none {
+    display: none !important;
+}
+
+/* LOGIN */
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#login input{
+    padding: 0 5px 10px 5px;
+    width: 100%;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 20px;
+    color: #4f4f4f;
+    text-align: center;
+    border-bottom: 1px solid #828282;
+    box-sizing: border-box;
+}
+#login button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 5px 14px;
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #6BBC5F;
+    background: #6BBC5F;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* MAIN */
+#main {
+    position: relative;
+    width: 1440px;
+    padding: 100px 0 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* greeting */
+#greeting {
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#greeting .time {
+    font-family: 'Gilroy';
+    font-size: 64px;
+    font-weight: 300;
+}
+#greeting .time span {
+    display: inline-block;
+    width: 250px;
+    font-weight: 600;
+}
+#greeting p {
+    margin: 5px 0 0;
+    font-size: 40px;
+    font-weight: 400;
+}
+#greeting p span {
+    font-weight: 600;
+}
+
+/* todoList */
+#todoList {
+    position: relative;
+    overflow: hidden;
+    padding: 28px 70px 35px 25px;
+    margin: 35px 0 0;
+    width: 1035px;
+    height: 599px;
+    letter-spacing: -0.05em;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#todoList h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+#todoList .todoList__wrap {
+    margin: 43px 0 0;
+}
+#todoList .todoList__text input {
+    padding: 0 5px 10px 5px;
+    width: 100%;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 20px;
+    color: #4f4f4f;
+    border-bottom: 1px solid #828282;
+    box-sizing: border-box;
+}
+#todoList .todoList__text .todoList__text__list {
+    overflow-y: auto;
+    margin: 32px 0 0;
+    height: 398px;
+}
+#todoList .todoList__text .todoList__text__list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 13px 20px;
+    height: 58px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+#todoList .todoList__text .todoList__text__list li:not(:first-child) {
+    margin: 10px 0 0;
+}
+#todoList .todoList__text .todoList__text__list li button {
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    background: #fff;
+    background: url(/todolist/images/ico-check.svg)no-repeat center;
+    border: 2px solid #6BBC5F;
+    border-radius: 5px;
+    transition: .25s ease-in-out;
+}
+#todoList .todoList__text .todoList__text__list li button:hover {
+    background-color: #6BBC5F;
+}
+#todoList .todoList__text .todoList__text__list li span{
+    overflow: hidden;
+    width: calc(100% - 32px);
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+/* weather */
+#weather {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#weather p {
+    font-family: 'Gilroy';
+    font-size: 38px;
+}
+#weather p span {
+    display: block;
+}
+#weather p span:nth-child(2) {
+    padding: 5px 0 0;
+    font-size: 26px;
+}
+

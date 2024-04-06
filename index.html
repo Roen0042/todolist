@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Momentum App</title>
+</head>
+<body>
+    <section id="login" class>
+        <form id="login-form">
+            <input type="text" required placeholder="이름을 입력하세요" />
+            <button type="submit">확인</button>
+        </form>
+        
+    </section>
+    <section id="main" class="none">
+        <article id="greeting">
+            <h2 class="time"><span>14:00:33</span> Sunday</h2>
+            <p>반갑습니다 <span>TEST</span>님!</p>
+        </article>
+        <article id="todoList">
+            <h4>TO DO LIST</h4>
+            <div class="todoList__wrap">
+                <div class="todoList__text">
+                    <form id="todo-form">
+                        <input type="text" placeholder="오늘 할일을 입력해주세요!" />
+                    </form>
+                    <ul class="todoList__text__list">
+
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article id="weather">
+            <img class="weather__icon">
+            <p class="weather__info"> 
+                <span></span>
+                <span></span>
+            </p>
+        </article>
+    </section>
+
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
