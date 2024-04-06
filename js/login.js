@@ -20,7 +20,7 @@ function loginSumbit(e){
 }
 
 function greetings(username) {
-    greeting.innerHTML = `반갑습니다 <span>${username}<span>!`;
+    greeting.innerHTML = `반갑습니다 <span>${username}<span>님!`;
     main.classList.remove(NONE);
     login.classList.add(NONE);
 }
